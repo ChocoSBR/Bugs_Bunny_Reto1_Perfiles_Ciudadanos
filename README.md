@@ -54,9 +54,9 @@ Bugs_Bunny_Reto1_Perfiles_Ciudadanos/
 
 El **documento técnico**, la **presentación ejecutiva** y las **fichas visuales** se encuentran en carpetas independientes para facilitar su consulta. Las demás carpetas contienen datos, código y resultados que respaldan el análisis.
 
-### Documentación administrativa para la entrega oficial
+### Documentación administrativa
 
-Para el envío al INE, la versión comprimida del proyecto debe incorporar una carpeta adicional en la raíz:
+Para la entrega al INE, se incluye la carpeta `cartas_firmadas/` con los siguientes documentos:
 
 ```text
 cartas_firmadas/
@@ -64,7 +64,7 @@ cartas_firmadas/
 └── Carta_Declaratoria_Bugs_Bunny.pdf
 ```
 
-Ambas cartas deben estar firmadas por todas las personas integrantes del equipo. **Esta carpeta se incorpora únicamente al ZIP que se envía por correo al INE; no se publica en GitHub**, ya que los documentos pueden contener firmas y datos personales.
+Ambos documentos están firmados por los cuatro integrantes del equipo. Por contener información personal, se incluyen únicamente en el ZIP de entrega y no en el repositorio público.
 
 ## Datos y criterios de análisis
 
