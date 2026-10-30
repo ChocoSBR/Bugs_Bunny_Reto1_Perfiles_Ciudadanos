@@ -100,9 +100,11 @@ Ambos documentos están firmados por los cuatro integrantes del equipo. Por cont
 
 **El proyecto incluye los datos procesados y los resultados del modelo, pero no los ZIP originales del INE.** Estos se consultan y descargan desde la [fuente oficial](https://www.ine.mx/transparencia/datos-abiertos/visualizacion-datos/conteos-censales-participacion/). Para revisar los resultados y regenerar las figuras finales no es necesario descargarlos.
 
+
 ### Opción A: regenerar las gráficas con los archivos incluidos
 
 1. Descarga o clona el repositorio y abre una terminal en la carpeta raíz (donde está este README).
+
 2. Instala las bibliotecas necesarias:
 
    ```bash
@@ -115,13 +117,7 @@ Ambos documentos están firmados por los cuatro integrantes del equipo. Por cont
    python src/graficas_finales.py
    ```
 
-El script lee los CSV de `datos/procesados/` y `perfiles/` y genera las nueve gráficas en formatos PNG y PDF. Para que los resultados se guarden en la carpeta existente `graficas/graficos_finales/`, la variable de salida de `src/graficas_finales.py` debe estar configurada así:
-
-```python
-SALIDA = RAIZ / "graficas" / "graficos_finales"
-```
-
-El script lee los CSV de `datos/procesados/` y `perfiles/`, y guarda las nueve gráficas en `graficas/graficos_finales/`.
+El script utiliza los CSV de `datos/procesados/` y `perfiles/` para generar nueve gráficas en formatos PNG y PDF, que se guardan en `graficas/graficos_finales/`.
 
 ### Opción B: revisar y volver a ejecutar los notebooks
 
