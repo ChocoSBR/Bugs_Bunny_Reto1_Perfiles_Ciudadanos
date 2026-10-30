@@ -135,7 +135,7 @@ En Colab, carga los archivos requeridos en `/content/` antes de ejecutar cada no
 
 - [Gráficas finales](graficas/graficos_finales/)
 - [Documento técnico (PDF)](documento_tecnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf)
-- [Presentación ejecutiva](presentacion/)
+- [Presentación ejecutiva](presentacion/Presentacion_Ejecutiva_Bugs_Bunny_Reto1.pdf)
 - [Cuatro fichas visuales](fichas_perfiles/README.md)
 
 ## Limitaciones
