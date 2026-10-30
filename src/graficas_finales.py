@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 RAIZ = Path(".")
 PERFILES = RAIZ / "perfiles"
 PROCESADOS = RAIZ / "datos" / "procesados"
-SALIDA = RAIZ / "graficas" / "graficos finales"
+SALIDA = RAIZ / "graficas" / "graficos_finales"
 SALIDA.mkdir(parents=True, exist_ok=True)
 
 YEARS = [2009, 2012, 2015, 2018, 2021, 2024]
