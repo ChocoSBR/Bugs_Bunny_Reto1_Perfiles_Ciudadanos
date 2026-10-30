@@ -43,7 +43,6 @@ Bugs_Bunny_Reto1_Perfiles_Ciudadanos/
 ├── graficas/
 │   └── graficos_finales/      # Nueve gráficas en PNG y PDF
 ├── datos/
-│   ├── originales/            # Carpeta reservada; originales no incluidos
 │   ├── procesados/            # Bases agrupadas y serie histórica comparable
 │   └── compatibilidad/       # Correspondencias de variables por elección
 ├── notebooks/                # Diez cuadernos de procesamiento y análisis
