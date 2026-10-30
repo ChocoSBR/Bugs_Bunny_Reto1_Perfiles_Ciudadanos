@@ -41,7 +41,7 @@ Bugs_Bunny_Reto1_Perfiles_Ciudadanos/
 │   ├── Participacion_por_Activar.png
 │   └── README.md
 ├── graficas/
-│   └── graficos finales/      # Nueve gráficas en PNG y PDF
+│   └── graficos_finales/      # Nueve gráficas en PNG y PDF
 ├── datos/
 │   ├── originales/            # Carpeta reservada; originales no incluidos
 │   ├── procesados/            # Bases agrupadas y serie histórica comparable
@@ -53,6 +53,18 @@ Bugs_Bunny_Reto1_Perfiles_Ciudadanos/
 ```
 
 El **documento técnico**, la **presentación ejecutiva** y las **fichas visuales** se encuentran en carpetas independientes para facilitar su consulta. Las demás carpetas contienen datos, código y resultados que respaldan el análisis.
+
+### Documentación administrativa para la entrega oficial
+
+Para el envío al INE, la versión comprimida del proyecto debe incorporar una carpeta adicional en la raíz:
+
+```text
+cartas_firmadas/
+├── Carta_Cesion_Derechos_Bugs_Bunny.pdf
+└── Carta_Declaratoria_Bugs_Bunny.pdf
+```
+
+Ambas cartas deben estar firmadas por todas las personas integrantes del equipo. **Esta carpeta se incorpora únicamente al ZIP que se envía por correo al INE; no se publica en GitHub**, ya que los documentos pueden contener firmas y datos personales.
 
 ## Datos y criterios de análisis
 
@@ -103,7 +115,13 @@ El **documento técnico**, la **presentación ejecutiva** y las **fichas visuale
    python src/graficas_finales.py
    ```
 
-El script lee los CSV de `datos/procesados/` y `perfiles/`, y guarda las nueve gráficas en `graficas/graficos finales/`.
+El script lee los CSV de `datos/procesados/` y `perfiles/` y genera las nueve gráficas en formatos PNG y PDF. Para que los resultados se guarden en la carpeta existente `graficas/graficos_finales/`, la variable de salida de `src/graficas_finales.py` debe estar configurada así:
+
+```python
+SALIDA = RAIZ / "graficas" / "graficos_finales"
+```
+
+Si el script aún utiliza `"graficos finales"` (con espacio), se debe actualizar esa línea antes de ejecutarlo.
 
 ### Opción B: revisar y volver a ejecutar los notebooks
 
@@ -137,6 +155,8 @@ En Colab, carga los archivos requeridos en `/content/` antes de ejecutar cada no
 - [Documento técnico (PDF)](documento_tecnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf)
 - [Presentación ejecutiva](presentacion/Presentacion_Ejecutiva_Bugs_Bunny_Reto1.pdf)
 - [Cuatro fichas visuales](fichas_perfiles/README.md)
+
+Las cartas firmadas se adjuntan exclusivamente en el ZIP de la entrega oficial (véase la sección **Documentación administrativa para la entrega oficial**).
 
 ## Limitaciones
 
