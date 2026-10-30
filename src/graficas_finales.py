@@ -29,7 +29,7 @@ SALIDA.mkdir(parents=True, exist_ok=True)
 
 YEARS = [2009, 2012, 2015, 2018, 2021, 2024]
 
-# Escribe aquí el nombre exacto de la columna si la detección automática falla
+# Configuración opcional de nombres de columnas
 COLS = {"perfil": None, "sexo": None, "seccion": None, "edad": None}
 
 # De mayor a menor participación: alta, media-alta, media-baja, baja
