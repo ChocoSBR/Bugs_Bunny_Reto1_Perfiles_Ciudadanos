@@ -29,31 +29,30 @@ La solución con `k = 4` obtuvo el mayor coeficiente de silueta entre las altern
 
 ```text
 Bugs_Bunny_Reto1_Perfiles_Ciudadanos/
-├── README.md                   # Descripción, metodología y guía de reproducción
-├── documento_tecnico/
-│   ├── Hackathon_INE_Documento.pdf
-│   └── Hackathon_INE_Documento.tex
+├── README.md                  # Descripción, metodología y reproducción
+├── documento técnico/
+│   └── Documento_Tecnico_Bugs_Bunny_Reto1.pdf
 ├── presentacion/
-│   └── Hackathon INE presentación.pdf
-├── fichas_visuales/
+│   └── (presentación ejecutiva en PDF)
+├── fichas perfiles/
 │   ├── Participación Consolidada.png
 │   ├── Participación Constante.png
 │   ├── Participación Intermitente.png
 │   ├── Participación por Activar.png
 │   └── README.md
 ├── graficas/
-│   └── graficos finales/      # Nueve gráficas, cada una en PNG y PDF
+│   └── graficos finales/      # Nueve gráficas en PNG y PDF
 ├── datos/
-│   ├── originales/            # Reservada; los ZIP originales del INE no se incluyen
+│   ├── originales/            # Carpeta reservada; originales no incluidos
 │   ├── procesados/            # Bases agrupadas y serie histórica comparable
-│   └── compatibilidad/        # Correspondencias de variables por elección
-├── notebooks/                 # Diez cuadernos de procesamiento y análisis
-├── perfiles/                  # Asignaciones, centroides y caracterización
+│   └── compatibilidad/       # Correspondencias de variables por elección
+├── notebooks/                # Diez cuadernos de procesamiento y análisis
+├── perfiles/                 # Asignaciones, centroides y caracterización
 └── src/
-    └── graficas_finales.py   # Generación de las nueve gráficas finales
+    └── graficas_finales.py  # Generación de las nueve gráficas finales
 ```
 
-El **documento técnico**, la **presentación ejecutiva** y las **fichas visuales** se encuentran en carpetas independientes para facilitar su consulta. Las demás carpetas contienen los datos, el código y los resultados que respaldan el análisis.
+El **documento técnico**, la **presentación ejecutiva** y las **fichas visuales** se encuentran en carpetas independientes para facilitar su consulta. Las demás carpetas contienen datos, código y resultados que respaldan el análisis.
 
 ## Datos y criterios de análisis
 
@@ -68,8 +67,8 @@ El **documento técnico**, la **presentación ejecutiva** y las **fichas visuale
 1. Validar cada elección: 32 entidades, conteos y la relación `LN = SV + NV + NS`.
 2. Homologar las categorías e integrar las seis elecciones.
 3. Realizar un análisis exploratorio de tasas, tendencias y correlaciones.
-4. Estandarizar las seis tasas históricas y evaluar K-means con `k = 4, 5, 6`, considerando silueta, inercia, tamaños e interpretabilidad. Las variables de edad, sexo, entidad y tipo de sección se usaron **después** para caracterizar los conglomerados; no para asignarlos.
-5. Evaluar robustez excluyendo de manera temporal las unidades con al menos un año con `SV + NV < 100`, y comparar las asignaciones con el índice ARI.
+4. Estandarizar las seis tasas históricas y evaluar K-means con `k = 4, 5, 6`, considerando silueta, inercia, tamaños e interpretabilidad. Las variables de edad, sexo, entidad y tipo de sección se utilizaron **después** para caracterizar los conglomerados; no para asignarlos.
+5. Evaluar robustez excluyendo temporalmente las unidades con al menos un año con `SV + NV < 100` y comparar las asignaciones con el índice ARI.
 6. Caracterizar los cuatro perfiles y proponer estrategias institucionales de información electoral diferenciadas y no partidistas.
 
 ## Archivos clave
@@ -87,12 +86,12 @@ El **documento técnico**, la **presentación ejecutiva** y las **fichas visuale
 
 ## Reproducción y requisitos
 
-**El ZIP incluye los datos procesados y los resultados del modelo, pero no los ZIP originales del INE.** Estos se consultan y descargan desde la [fuente oficial](https://www.ine.mx/transparencia/datos-abiertos/visualizacion-datos/conteos-censales-participacion/). Para revisar los resultados y regenerar las figuras finales no es necesario descargarlos.
+**El proyecto incluye los datos procesados y los resultados del modelo, pero no los ZIP originales del INE.** Estos se consultan y descargan desde la [fuente oficial](https://www.ine.mx/transparencia/datos-abiertos/visualizacion-datos/conteos-censales-participacion/). Para revisar los resultados y regenerar las figuras finales no es necesario descargarlos.
 
 ### Opción A: regenerar las gráficas con los archivos incluidos
 
-1. Extrae este ZIP y abre una terminal en la carpeta `Bugs_Bunny_Reto1_Perfiles_Ciudadanos` (donde está este README).
-2. Instala las bibliotecas utilizadas para las gráficas:
+1. Descarga o clona el repositorio y abre una terminal en la carpeta raíz (donde está este README).
+2. Instala las bibliotecas necesarias:
 
    ```bash
    python -m pip install pandas numpy matplotlib
@@ -108,9 +107,9 @@ El script lee los CSV de `datos/procesados/` y `perfiles/`, y guarda las nueve g
 
 ### Opción B: revisar y volver a ejecutar los notebooks
 
-Los notebooks están preparados principalmente para **Google Colab** y varios contienen rutas absolutas como `/content/`. Para ejecutarlos en Jupyter local es necesario cambiar esas rutas; no basta con abrir los `.ipynb` desde la carpeta del repositorio.
+Los notebooks están preparados principalmente para **Google Colab** y varios contienen rutas absolutas como `/content/`. Para ejecutarlos en Jupyter local es necesario adaptar esas rutas; no basta con abrir los `.ipynb` desde la carpeta del repositorio.
 
-Dependencias utilizadas a lo largo del proceso: `pandas`, `numpy`, `scikit-learn`, `matplotlib` y `requests`; en Colab se usan además funciones de carga de archivos propias del entorno. Las bibliotecas se pueden instalar con:
+Dependencias utilizadas a lo largo del proceso: `pandas`, `numpy`, `scikit-learn`, `matplotlib` y `requests`. En Colab se usan además funciones de carga propias del entorno. Las bibliotecas se pueden instalar con:
 
 ```bash
 python -m pip install pandas numpy scikit-learn matplotlib requests
@@ -135,10 +134,9 @@ En Colab, carga los archivos requeridos en `/content/` antes de ejecutar cada no
 ![Tamaño de los perfiles](graficas/graficos%20finales/03_tamano_perfiles.png)
 
 - [Gráficas finales](graficas/graficos%20finales/)
-- [Documento técnico (PDF)](documento_tecnico/Hackathon_INE_Documento.pdf)
-- [Código LaTeX del documento](documento_tecnico/Hackathon_INE_Documento.tex) (para compilar con XeLaTeX y fuente Arial)
-- [Presentación ejecutiva (PDF)](presentacion/Hackathon%20INE%20presentaci%C3%B3n.pdf)
-- [Cuatro fichas visuales](fichas_visuales/README.md)
+- [Documento técnico (PDF)](documento%20t%C3%A9cnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf)
+- [Presentación ejecutiva](presentacion/)
+- [Cuatro fichas visuales](fichas%20perfiles/README.md)
 
 ## Limitaciones
 

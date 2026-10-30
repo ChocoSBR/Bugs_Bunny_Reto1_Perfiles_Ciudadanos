@@ -15,4 +15,4 @@ Las fichas resumen las características principales de los cuatro conglomerados 
 
 Los nombres narrativos facilitan la comunicación de los resultados; no implican que se haya observado la conducta electoral individual de las mismas personas a lo largo del tiempo.
 
-Para conocer las variables, la metodología de segmentación y las limitaciones del análisis, consulta el [README principal](../README.md) y el [documento técnico](../documento_tecnico/Hackathon_INE_Documento.pdf).
+Para consultar las variables, la metodología de segmentación y las limitaciones del análisis, revisa el [README principal](../README.md) y el [documento técnico](../documento%20t%C3%A9cnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf).
