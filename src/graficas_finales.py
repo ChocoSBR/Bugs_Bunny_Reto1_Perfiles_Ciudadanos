@@ -1,15 +1,15 @@
 """
-Gráficas finales - Hackathon INE 2026, Reto 1 (equipo Bugs Bunny).
+Generación de gráficas - Hackathon INE 2026, Reto 1.
 
-Uso (desde la raíz del repositorio, o en Colab tras clonarlo):
+Equipo Bugs Bunny.
+
+El script utiliza las bases procesadas y los resultados del
+clustering para generar nueve gráficas en formatos PNG y PDF.
+
+Ejecución desde la raíz del proyecto:
     python src/graficas_finales.py
 
-Lee los CSV de datos/procesados y perfiles, y guarda cada gráfica en
-graficas/ como PNG (300 dpi) y PDF vectorial.
-
-Si algún nombre de columna no coincide con el esperado, el script avisa
-cuál falta y muestra las columnas disponibles. En ese caso, escribe el
-nombre real en el diccionario COLS de abajo.
+Los archivos se guardan en graficas/graficos finales/.
 """
 from pathlib import Path
 import unicodedata
