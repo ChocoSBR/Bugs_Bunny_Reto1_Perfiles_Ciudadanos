@@ -30,15 +30,15 @@ La solución con `k = 4` obtuvo el mayor coeficiente de silueta entre las altern
 ```text
 Bugs_Bunny_Reto1_Perfiles_Ciudadanos/
 ├── README.md                  # Descripción, metodología y reproducción
-├── documento técnico/
+├── documento_tecnico/
 │   └── Documento_Tecnico_Bugs_Bunny_Reto1.pdf
 ├── presentacion/
-│   └── (presentación ejecutiva en PDF)
-├── fichas perfiles/
-│   ├── Participación Consolidada.png
-│   ├── Participación Constante.png
-│   ├── Participación Intermitente.png
-│   ├── Participación por Activar.png
+│   └── Presentacion_Ejecutiva_Bugs_Bunny_Reto1.pdf
+├── fichas_perfiles/
+│   ├── Participacion_Consolidada.png
+│   ├── Participacion_Constante.png
+│   ├── Participacion_Intermitente.png
+│   ├── Participacion_por_Activar.png
 │   └── README.md
 ├── graficas/
 │   └── graficos finales/      # Nueve gráficas en PNG y PDF
@@ -127,16 +127,16 @@ En Colab, carga los archivos requeridos en `/content/` antes de ejecutar cada no
 
 ## Entregables y gráficas
 
-![Trayectorias de los perfiles](graficas/graficos%20finales/01_trayectorias_perfiles.png)
+![Trayectorias de los perfiles](graficas/graficos_finales/01_trayectorias_perfiles.png)
 
-![Selección de k](graficas/graficos%20finales/02_seleccion_k.png)
+![Selección de k](graficas/graficos_finales/02_seleccion_k.png)
 
-![Tamaño de los perfiles](graficas/graficos%20finales/03_tamano_perfiles.png)
+![Tamaño de los perfiles](graficas/graficos_finales/03_tamano_perfiles.png)
 
-- [Gráficas finales](graficas/graficos%20finales/)
-- [Documento técnico (PDF)](documento%20t%C3%A9cnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf)
+- [Gráficas finales](graficas/graficos_finales/)
+- [Documento técnico (PDF)](documento_tecnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf)
 - [Presentación ejecutiva](presentacion/)
-- [Cuatro fichas visuales](fichas%20perfiles/README.md)
+- [Cuatro fichas visuales](fichas_perfiles/README.md)
 
 ## Limitaciones
 

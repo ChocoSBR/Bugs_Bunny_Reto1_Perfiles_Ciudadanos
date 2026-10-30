@@ -8,11 +8,11 @@ Las fichas resumen las características principales de los cuatro conglomerados 
 
 | Archivo | Nombre narrativo del perfil | Clasificación histórica |
 |---|---|---|
-| [Participación Consolidada.png](Participaci%C3%B3n%20Consolidada.png) | Participación consolidada | Históricamente alta |
-| [Participación Constante.png](Participaci%C3%B3n%20Constante.png) | Participación constante | Históricamente media-alta |
-| [Participación Intermitente.png](Participaci%C3%B3n%20Intermitente.png) | Participación intermitente | Históricamente media-baja |
-| [Participación por Activar.png](Participaci%C3%B3n%20por%20Activar.png) | Participación por activar | Históricamente baja |
+| [Participación Consolidada.png](Participacion_Consolidada.png) | Participación consolidada | Históricamente alta |
+| [Participación Constante.png](Participacion_Constante.png) | Participación constante | Históricamente media-alta |
+| [Participación Intermitente.png](Participacion_Intermitente.png) | Participación intermitente | Históricamente media-baja |
+| [Participación por Activar.png](Participacion_por_Activar.png) | Participación por activar | Históricamente baja |
 
 Los nombres narrativos facilitan la comunicación de los resultados; no implican que se haya observado la conducta electoral individual de las mismas personas a lo largo del tiempo.
 
-Para consultar las variables, la metodología de segmentación y las limitaciones del análisis, revisa el [README principal](../README.md) y el [documento técnico](../documento%20t%C3%A9cnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf).
+Para consultar las variables, la metodología de segmentación y las limitaciones del análisis, revisa el [README principal](../README.md) y el [documento_tecnico](../documento_tecnico/Documento_Tecnico_Bugs_Bunny_Reto1.pdf).
