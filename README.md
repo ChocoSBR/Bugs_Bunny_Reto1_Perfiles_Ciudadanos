@@ -121,7 +121,7 @@ El script lee los CSV de `datos/procesados/` y `perfiles/` y genera las nueve gr
 SALIDA = RAIZ / "graficas" / "graficos_finales"
 ```
 
-Si el script aún utiliza `"graficos finales"` (con espacio), se debe actualizar esa línea antes de ejecutarlo.
+El script lee los CSV de `datos/procesados/` y `perfiles/`, y guarda las nueve gráficas en `graficas/graficos_finales/`.
 
 ### Opción B: revisar y volver a ejecutar los notebooks
 
@@ -156,7 +156,7 @@ En Colab, carga los archivos requeridos en `/content/` antes de ejecutar cada no
 - [Presentación ejecutiva](presentacion/Presentacion_Ejecutiva_Bugs_Bunny_Reto1.pdf)
 - [Cuatro fichas visuales](fichas_perfiles/README.md)
 
-Las cartas firmadas se adjuntan exclusivamente en el ZIP de la entrega oficial (véase la sección **Documentación administrativa para la entrega oficial**).
+Las cartas firmadas se adjuntan exclusivamente en el ZIP de la entrega oficial (véase la sección **Documentación administrativa**).
 
 ## Limitaciones
 

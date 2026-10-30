@@ -9,7 +9,7 @@ clustering para generar nueve gráficas en formatos PNG y PDF.
 Ejecución desde la raíz del proyecto:
     python src/graficas_finales.py
 
-Los archivos se guardan en graficas/graficos finales/.
+Los archivos se guardan en graficas/graficos_finales/.
 """
 from pathlib import Path
 import unicodedata
